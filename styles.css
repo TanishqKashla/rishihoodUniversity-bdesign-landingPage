@@ -826,7 +826,7 @@ body {
 /* Tools Grid */
 .curriculum-tools-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   padding: 2rem;
   background: #faf8f4;
