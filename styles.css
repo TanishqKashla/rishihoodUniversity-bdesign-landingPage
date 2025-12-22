@@ -1322,6 +1322,10 @@ body {
   background-color: white;
 }
 
+.partners-section .section-title {
+  margin-bottom: 0px;
+}
+
 .partners-title {
   color: var(--brand-red);
   font-weight: 700;
@@ -1342,14 +1346,14 @@ body {
   font-size: 16px;
   color: black;
   max-width: 1000px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   line-height: 1.6;
 }
 
 @media (min-width: 768px) {
   .partners-subtitle {
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 
@@ -2964,12 +2968,15 @@ body {
   background: #faf8f4;
 }
 
+.study-trek-section .section-title {
+  padding: 0 40px;
+}
+
 .trek-description {
   font-size: 18px;
   color: #000000;
   line-height: 1;
   text-align: center;
-  padding-top: 24px;
   margin-bottom: 24px;
   max-width: 800px;
 }

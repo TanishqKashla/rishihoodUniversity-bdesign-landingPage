@@ -636,34 +636,40 @@ function moveCarousel(direction) {
 }
 
 function autoScrollFaculty() {
-  const carousel = document.querySelector(`#${currentFacultyTab} .carousel`);
-  if (!carousel) return;
-
-  const cards = carousel.querySelectorAll(".faculty-card");
   const isMobile = window.innerWidth <= 768;
 
   if (isMobile) {
-    // Mobile: use native scrolling
-    const carouselContainer = document.getElementById(currentFacultyTab);
-    if (!carouselContainer) return;
+    // Mobile: use native scrolling for ALL faculty carousels
+    const carouselIds = ["our-faculty", "visiting-faculty"];
 
-    const scrollAmount = Math.round(carouselContainer.clientWidth * 0.8);
-    const maxScroll = carouselContainer.scrollWidth - carouselContainer.clientWidth;
+    carouselIds.forEach((id) => {
+      const carouselContainer = document.getElementById(id);
+      if (!carouselContainer) return;
 
-    if (carouselContainer.scrollLeft >= maxScroll - 10) {
-      // At the end, jump back to start
-      carouselContainer.scrollTo({
-        left: 0,
-        behavior: "smooth",
-      });
-    } else {
-      // Scroll right
-      carouselContainer.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
-    }
+      const scrollAmount = Math.round(carouselContainer.clientWidth * 0.8);
+      const maxScroll =
+        carouselContainer.scrollWidth - carouselContainer.clientWidth;
+
+      if (carouselContainer.scrollLeft >= maxScroll - 10) {
+        // At the end, jump back to start
+        carouselContainer.scrollTo({
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        // Scroll right
+        carouselContainer.scrollBy({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    });
   } else {
+    const carousel = document.querySelector(`#${currentFacultyTab} .carousel`);
+    if (!carousel) return;
+
+    const cards = carousel.querySelectorAll(".faculty-card");
+
     // Desktop: transform-based
     const cardWidth = 420;
     const visibleCards = 3;
