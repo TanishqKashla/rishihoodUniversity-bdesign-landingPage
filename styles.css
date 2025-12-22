@@ -2275,11 +2275,18 @@ body {
 
 @media (min-width: 768px) {
   .footer-legal {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1417px) {
+  .footer-legal {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     font-size: 1rem;
   }
 }
+
 
 .section-title {
   color: #cc0033;
