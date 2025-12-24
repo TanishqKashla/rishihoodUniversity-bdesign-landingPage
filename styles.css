@@ -344,7 +344,7 @@ body {
 
 @media (min-width: 1024px) {
   .program-stats-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
 }
@@ -366,7 +366,7 @@ body {
 
 @media (min-width: 1024px) {
   .software-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 }
@@ -420,17 +420,18 @@ body {
 
 /* program hours card */
 .program-hours-card {
-  padding: 5rem 1.5rem !important;
+  padding: 2rem 1.5rem !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
 @media (min-width: 768px) {
   .program-hours-card {
-    padding: 4.75rem 2rem;
+    padding: 3.75rem 2rem;
   }
 }
 
@@ -492,7 +493,7 @@ body {
 
 @media (min-width: 768px) {
   .program-stat-number {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -507,7 +508,7 @@ body {
 
 @media (min-width: 768px) {
   .program-stat-label {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* max-width: 220px;  */
   }
 }
@@ -1191,7 +1192,7 @@ body {
 /* Mobile Styles - Faculty */
 @media (max-width: 767px) {
   .faculty-section {
-    padding: 40px 16px;
+    padding: 20px 16px 30px;
     min-height: 70vh;
   }
 
@@ -1224,6 +1225,7 @@ body {
     margin-bottom: 20px;
     margin-left: 8px;
     margin-right: 8px;
+    margin-top: 40px;
     text-align: center;
     width: auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -1318,7 +1320,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 24px 60px 24px;
+  padding: 25px 24px 60px 24px;
   background-color: white;
 }
 
@@ -1758,7 +1760,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0rem 2.5rem;
+  padding: 1rem 2.5rem;
   background-color: #faf8f4;
 }
 
@@ -1768,32 +1770,18 @@ body {
   }
 }
 
-.admission-title {
-  color: var(--brand-red);
-  font-weight: 700;
-  text-align: center;
-  font-size: 28px;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 
-@media (min-width: 768px) {
-  .admission-title {
-    font-size: 48px;
-    padding-top: 0rem;
-  }
-}
 
 .admission-image {
   width: 90%;
   max-width: 1460px;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .admission-image {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+    width: 80%;
   }
 }
 
@@ -4025,7 +4013,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 4px solid #cc0033;
 }
 
 .specialization-card-img {
